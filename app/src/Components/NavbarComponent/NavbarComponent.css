@@ -1,0 +1,150 @@
+.nav{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.nav .navbar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #FAF9F6;
+}
+
+.nav .navbar .navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.nav .navbar .navbar-left .navbar-left-menu {
+    display: none;
+}
+.nav .navbar .navbar-left .navbar-left-menu img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.nav .navbar .navbar-left .navbar-left-menu img:hover{
+    cursor: pointer;
+}
+.nav .navbar .navbar-left .navbar-left-logo{
+    align-self: center;
+}
+.nav .navbar .navbar-left .navbar-left-logo h1:hover{
+    cursor: pointer;
+    color: #292929;
+    transition: 0.3s;
+}
+.nav .navbar .navbar-center ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    list-style: none;
+}
+.nav .navbar .navbar-center ul li{
+    font-weight: 500;
+}
+.nav .navbar .navbar-center ul li:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: 0.3s ease;
+    color: #0000FF;
+}
+
+.nav .navbar .navbar-right button{
+    padding: 10px 30px;
+    background-color: #3232ff;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.nav .navbar .navbar-right button:hover{
+    cursor: pointer;
+    background-color: #0000CC;
+    transition: 0.3s ease;
+}
+
+.nav .sidemenu{
+    width: 300px;
+    background: #121212;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s ease;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.nav .sidemenu .sidemenu-header{
+    cursor: pointer;
+}
+.nav .sidemenu .sidemenu-content{
+    position: absolute;
+    top:10%;
+}
+.nav .sidemenu .sidemenu-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.nav .sidemenu .sidemenu-content ul li:hover{
+    cursor: pointer;
+    transform: translateX(5px);
+    transition: 0.3s;
+    text-decoration: underline;
+    color: #3232ff;
+}
+
+.nav .sidemenu .sidemenu-footer{
+    position: absolute;
+    top: 80%;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVE QUERIES*/
+@media (max-width:1000px) and (min-width:50px) {
+.nav{
+    padding-bottom: 100px;
+}
+.nav .navbar{
+    padding: 15px;
+}
+
+.nav .navbar .navbar-left{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.nav .navbar .navbar-left .navbar-left-menu {
+    display: flex;
+}
+.nav .navbar .navbar-left .navbar-left-menu img{
+    width: 30px;
+    height: 30px;
+}
+.nav .navbar .navbar-center{
+    display: none;
+}
+
+.nav .navbar .navbar-right button{
+    padding: 10px 20px;
+    background-color: #3232ff;
+}
+.nav .sidemenu{
+    width: 300px;
+}  
+}
