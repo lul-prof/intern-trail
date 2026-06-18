@@ -3,6 +3,9 @@ import './NavbarComponent.css'
 import { assets } from '../../assets/assets'
 
 const NavbarComponent = () => {
+  const navigateTo=(id)=>{
+    document.getElementById(id).scrollIntoView({behavior:'smooth'})
+  }
   return (
     <div className="nav">
     <div className="navbar">
@@ -18,8 +21,8 @@ const NavbarComponent = () => {
       {/*-----------------------*/}
       <div className="navbar-center">
         <ul>
-          <li>HOME</li>
-          <li>REVIEWS</li>
+          <li onClick={()=>(navigateTo('home'))}>HOME</li>
+          <li onClick={()=>(navigateTo('reviews'))}>REVIEWS</li>
           <li>ABOUT</li>
           <li>FAQS</li>
           <li>CONTACT</li>

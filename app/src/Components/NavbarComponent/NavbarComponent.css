@@ -1,6 +1,6 @@
 .nav{
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .nav .navbar{
     width: 100%;
@@ -114,37 +114,106 @@
     cursor: pointer;
 }
 
+  
+/*-----------Mobile Screen---------------*/
 
-/*RESPONSIVE QUERIES*/
-@media (max-width:1000px) and (min-width:50px) {
+@media (max-width:500px) and (min-width:50px) {
 .nav{
-    padding-bottom: 100px;
+    padding-bottom:50px;
 }
 .nav .navbar{
-    padding: 15px;
+    padding: 10px;
+    gap: 6px;
+}
+.nav .navbar .navbar-left{
+    gap: 3px;
+}
+.nav .navbar .navbar-left .navbar-left-menu {
+    display: flex;
+}
+.nav .navbar .navbar-left .navbar-left-menu img{
+    width: 25px;
+    height: 25px;
+}
+.nav .navbar .navbar-left .navbar-left-logo {
+    align-self: last baseline;
+}
+.nav .navbar .navbar-left .navbar-left-logo h1{
+    font-size: clamp(16px,18px,20px);
+}
+.nav .navbar .navbar-center{
+    display: none;
+}
+.nav .navbar .navbar-right button{
+    padding: 5px;
+    font-size: clamp(14px,16px,18px);
+    font-weight: 300;
+}
+.nav .sidemenu{
+    width: 250px;
+    padding: 20px;
+}
+.nav .sidemenu .sidemenu-content{
+    top:20%;
+}
+.nav .sidemenu .sidemenu-content ul{
+    list-style: none;
+}
+.nav .sidemenu .sidemenu-footer{
+    position: absolute;
+    top: 95%;
+}
+    
 }
 
+
+@media (max-width:1000px) and (min-width:501px) {
+.nav{
+    padding-bottom:50px;
+}
+.nav .navbar{
+    padding: 10px;
+    gap: 6px;
+}
 .nav .navbar .navbar-left{
-    display: flex;
-    flex-direction: row;
     gap: 12px;
 }
 .nav .navbar .navbar-left .navbar-left-menu {
     display: flex;
 }
 .nav .navbar .navbar-left .navbar-left-menu img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+.nav .navbar .navbar-left .navbar-left-logo {
+    align-self: center;
+}
+.nav .navbar .navbar-left .navbar-left-logo h1{
+    font-size: clamp(20px,25px,30px);
 }
 .nav .navbar .navbar-center{
     display: none;
 }
-
 .nav .navbar .navbar-right button{
     padding: 10px 20px;
-    background-color: #3232ff;
+    font-size: clamp(14px,16px,18px);
+    font-weight: 300;
 }
 .nav .sidemenu{
     width: 300px;
-}  
+    padding: 20px;
 }
+.nav .sidemenu .sidemenu-content{
+    top:20%;
+}
+.nav .sidemenu .sidemenu-content ul{
+    list-style: none;
+}
+.nav .sidemenu .sidemenu-footer{
+    position: absolute;
+    top: 95%;
+}
+    
+}
+
+
