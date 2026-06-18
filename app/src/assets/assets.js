@@ -10,6 +10,8 @@ import profile2 from './profile2.jpeg'
 import profile3 from './profile3.jpeg'
 import profile4 from './profile4.jpeg'
 import starIcon from './star.png'
+import whyChooseUs from './whyChooseUs.jpeg'
+import tickIcon from './tick.png'
 
 
 export const assets={
@@ -24,7 +26,9 @@ export const assets={
     profile2,
     profile3,
     profile4,
-    starIcon
+    starIcon,
+    whyChooseUs,
+    tickIcon
 }
 
 export const reviews=[

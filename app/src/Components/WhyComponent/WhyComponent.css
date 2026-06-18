@@ -1,0 +1,53 @@
+.why{
+    width: 100%;
+    padding: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.why .why-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.why .why-class .why-class-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FAF9F6;
+    box-shadow: 0 8px 16px #C9C9C9;
+    border: 1px solid #C0C0C0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.why .why-class .why-class-left img:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+.why .why-class .why-class-right{
+    display: flex;
+    flex-direction:column;
+    gap: 12px;
+}
+.why .why-class .why-class-right .why-class-right-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.why .why-class .why-class-right .why-class-right-item .why-class-item-left img{
+    width: 30px;
+    height: 30px;
+}
+
+.why .why-class .why-class-right .why-class-right-item .why-class-item-right{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
