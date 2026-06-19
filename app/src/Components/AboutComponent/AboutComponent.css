@@ -1,0 +1,107 @@
+.about{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    overflow: hidden;
+    align-items: center;
+}
+.about .about-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: center;
+}
+.about .about-left .about-left-header{
+    align-self: center;
+}
+.about .about-left .about-left-class{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about .about-left .about-left-class p{
+    font-size: clamp(18px,20px,24px);
+    line-height: 1.5em;
+}
+.about .about-left .about-left-class p span{
+    font-weight: 600;
+}
+.about .about-left .about-left-class .para-2 span{
+    color: #3232ff;
+}
+
+.about .about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about .about-right .about-right-header{
+    align-self: center;
+    display: none;
+}
+.about .about-right .about-right-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FAF9F6;
+    box-shadow: 0 8px 16px #C9C9C9;
+    border: 1px solid #C0C0C0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+    object-fit: cover;
+}
+
+.about .about-right .about-right-img img:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: 0.3s ease;
+}
+
+/*-----------Mobile Screen---------------*/
+@media (max-width:1200px) and (min-width:50px) {
+.about{
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+}
+.about .about-left{
+    gap: 24px;
+}
+.about .about-left .about-left-header{
+    align-self: center;
+    display: none;
+}
+.about .about-left .about-left-class{
+    gap: 12px;
+}
+.about .about-left .about-left-class p{
+    font-size: clamp(14px,16px,18px);
+}
+.about .about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about .about-right .about-right-header{
+    align-self: center;
+    display: flex;
+}
+.about .about-right .about-right-header h1{
+    letter-spacing: 10px;
+    font-size: clamp(18px,20px,24px);
+}
+.about .about-right .about-right-img img{
+    width: 100%;
+}
+}
+
+@media (max-width:1200px) and (min-width:901px) {
+.about .about-right .about-right-header h1{
+    letter-spacing: 10px;
+    font-size: clamp(20px,24px,28px);
+}
+}

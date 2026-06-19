@@ -43,6 +43,7 @@ const NavbarComponent = () => {
           <li>REVIEWS</li>
           <li>ABOUT</li>
           <li>FAQS</li>
+          <li>WHY US</li>
           <li>CONTACT</li>
           <li>LOGIN</li>
         </ul>

@@ -12,6 +12,10 @@ import profile4 from './profile4.jpeg'
 import starIcon from './star.png'
 import whyChooseUs from './whyChooseUs.jpeg'
 import tickIcon from './tick.png'
+import aboutUs1 from './about.jpeg'
+import aboutUs2 from './aboutUs.jpg'
+import arrowUpIcon from './arrowheadup.png'
+import arrowDownIcon from './downarrow.png'
 
 
 export const assets={
@@ -28,7 +32,11 @@ export const assets={
     profile4,
     starIcon,
     whyChooseUs,
-    tickIcon
+    tickIcon,
+    aboutUs1,
+    aboutUs2,
+    arrowUpIcon,
+    arrowDownIcon
 }
 
 export const reviews=[
@@ -60,5 +68,29 @@ export const reviews=[
         "role":"Lecturer",
         "description":"I don't have to travel from Ruiru to Bomet just to supervise 1 Student."
     }
+
+]
+
+export const faqs=[
+    {
+        "_id":"f001",
+        "faq":"How are attachments monitored and evaluated?",
+        "ans":"Attachments are monitored and evaluated through a joint effort by university supervisors and host supervisors. University supervisors conduct site visits, interacting with students and host supervisors. Both parties assess the student's performance using our platform, ensuring comprehensive evaluation and fostering continuous improvement."     
+    },
+    {
+        "_id":"f002",
+        "faq":"What responsibilities do host supervisors have?",
+        "ans":"Host organization supervisors oversee students during their attachment, providing mentorship, assigning tasks, and evaluating performance. They play a crucial role in facilitating a meaningful learning experience for students."     
+    },
+    {
+        "_id":"f003",
+        "faq":"Are attachments paid or unpaid?",
+        "ans":"The compensation structure for attachments can vary depending on the policies of the host organization and the nature of the attachment program. Some attachments may be unpaid, while others offer stipends, salaries, or other forms of compensation."     
+    },
+    {
+        "_id":"f004",
+        "faq":"How long do attachments last?",
+        "ans":"The duration of attachments varies based on the type. Work-Based Learning (WBL) attachments typically last for 325 hours, while Service-Based Learning (SBL) attachments usually span 220 hours. These durations are structured to ensure students gain comprehensive learning experiences tailored to the specific requirements of each attachment type."     
+    },
 
 ]
