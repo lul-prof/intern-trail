@@ -1,10 +1,12 @@
 import React from 'react'
 import './HeroComponent.css'
 import { assets } from '../../assets/assets'
+import toast from 'react-hot-toast'
 
 const HeroComponent = () => {
   return (
     <>
+    <div className="hero-container">
     <div id='home' className="hero">
       {/*--------------------*/}
       <div className="hero-left">
@@ -26,13 +28,14 @@ const HeroComponent = () => {
           </p>
         </div>
         <div className="hero-left-bottom">
-          <button>GET STARTED FOR FREE</button>
+          <button onClick={()=>(toast.success('Feature Under development!'))}>GET STARTED FOR FREE</button>
         </div>
       </div>
       {/*----------------------*/}
       <div className="hero-right">
         <img src={assets.heroImage} alt="image" />
       </div>
+    </div>
     </div>
     </>
   )

@@ -1,0 +1,40 @@
+.cta{
+    width:100%;
+    padding: 50px;
+    background: rgba(204,204,204,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 24px;
+}
+.cta .cta-bottom button{
+    padding: 15px 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 50px;
+    background: #3232FF;
+    color: #FFFFFF;
+    text-align: center;
+}
+.cta .cta-bottom button:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: 0.3s;
+    background: #0000FF;
+}
+
+/*-----------Mobile Screen---------------*/
+@media (max-width:768px) and (min-width:50px) {
+.cta{
+    padding:30px 15px;
+}
+.cta .cta-top h2{
+    font-size: clamp(18px,20px,24px);
+    line-height: 1.5em;
+}
+.cta .cta-bottom button{
+    text-align: center;
+}
+}

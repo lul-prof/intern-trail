@@ -1,0 +1,93 @@
+.faqs{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+}
+.faqs .faqs-header{
+    align-self: center;
+    margin-bottom: 50px;
+}
+.faqs .faqs-class{
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   align-self: center;
+   max-width: 70%;
+}
+.faqs .faqs-class .faq{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(250,249,246,0.6);
+    border: 1px solid rgba(201,201,201,1);
+    box-shadow: 0 8px 16px rgba(204,204,204,0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 10px;
+    border-radius: 5px;
+}
+.faqs .faqs-class .faq .faq-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.faqs .faqs-class .faq .faq-top:hover{
+    cursor: pointer;
+}
+.faqs .faqs-class .faq .faq-top .faq-top-left h3{
+    font-weight: 550;
+}
+.faqs .faqs-class .faq .faq-top .faq-top-right img{
+    width: 25px;
+    height: 25px;
+}
+.faqs .faqs-class .faq .faq-top .faq-top-right img:hover{
+    cursor: pointer;
+}
+.faqs .faqs-class .faq  .faq-bottom{
+   border-top: 1px solid rgba(201,201,201,1);
+   padding: 10px 0;
+}
+/*-----------Mobile Screen---------------*/
+@media (max-width:768px) and (min-width:50px) {
+.faqs{
+    padding: 15px;
+    gap: 24px;
+}
+.faqs .faqs-header{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.faqs .faqs-header h1{
+    font-size: clamp(18px,20px,24px);
+    line-height: 1.5em;
+}
+.faqs .faqs-class{
+   gap: 12px;
+   max-width: 100%;
+}
+.faqs .faqs-class .faq{
+    gap: 12px;
+}
+.faqs .faqs-class .faq .faq-top{
+    gap: 12px;
+}
+.faqs .faqs-class .faq .faq-top .faq-top-left h3{
+    font-size: clamp(16px,18px,20px);
+    line-height: 1.3em;
+}
+.faqs .faqs-class .faq .faq-top .faq-top-right img{
+    width: 20px;
+    height: 20px;
+}
+.faqs .faqs-class .faq  .faq-bottom{
+   border-top: 1px solid rgba(201,201,201,1);
+   padding: 10px 0;
+}   
+}

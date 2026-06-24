@@ -16,7 +16,13 @@ import aboutUs1 from './about.jpeg'
 import aboutUs2 from './aboutUs.jpg'
 import arrowUpIcon from './arrowheadup.png'
 import arrowDownIcon from './downarrow.png'
-
+import applyIcon from './job-application.png'
+import submitIcon from './file-upload.png'
+import fillIcon from './filling-form.png'
+import trackIcon from './progress.png'
+import searchIcon from './search.png'
+import superviseIcon from './transparency.png'
+import approveIcon from './badge.png'
 
 export const assets={
     menuIcon,
@@ -36,7 +42,14 @@ export const assets={
     aboutUs1,
     aboutUs2,
     arrowUpIcon,
-    arrowDownIcon
+    arrowDownIcon,
+    applyIcon,
+    submitIcon,
+    fillIcon,
+    trackIcon,
+    searchIcon,
+    superviseIcon,
+    approveIcon
 }
 
 export const reviews=[

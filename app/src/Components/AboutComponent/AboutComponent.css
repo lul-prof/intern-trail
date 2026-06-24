@@ -1,47 +1,52 @@
-.about{
+.about-container{
     width: 100%;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+ .about-container .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     overflow: hidden;
     align-items: center;
 }
-.about .about-left{
+.about-container .about .about-left{
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-self: center;
 }
-.about .about-left .about-left-header{
+.about-container .about .about-left .about-left-header{
     align-self: center;
 }
-.about .about-left .about-left-class{
+.about-container .about .about-left .about-left-class{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.about .about-left .about-left-class p{
+.about-container .about .about-left .about-left-class p{
     font-size: clamp(18px,20px,24px);
     line-height: 1.5em;
 }
-.about .about-left .about-left-class p span{
+.about-container .about .about-left .about-left-class p span{
     font-weight: 600;
 }
-.about .about-left .about-left-class .para-2 span{
+.about-container .about .about-left .about-left-class .para-2 span{
     color: #3232ff;
 }
 
-.about .about-right{
+.about-container .about .about-right{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.about .about-right .about-right-header{
+.about-container .about .about-right .about-right-header{
     align-self: center;
     display: none;
 }
-.about .about-right .about-right-img img{
+.about-container .about .about-right .about-right-img img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -54,7 +59,7 @@
     object-fit: cover;
 }
 
-.about .about-right .about-right-img img:hover{
+.about-container .about .about-right .about-right-img img:hover{
     cursor: pointer;
     transform: translateY(5px);
     transition: 0.3s ease;
@@ -62,45 +67,47 @@
 
 /*-----------Mobile Screen---------------*/
 @media (max-width:1200px) and (min-width:50px) {
-.about{
+.about-container{
     padding: 30px 15px;
+}
+.about-container .about{
     display: flex;
     flex-direction: column-reverse;
     gap: 12px;
 }
-.about .about-left{
+.about-container .about .about-left{
     gap: 24px;
 }
-.about .about-left .about-left-header{
+.about-container .about .about-left .about-left-header{
     align-self: center;
     display: none;
 }
-.about .about-left .about-left-class{
+.about-container .about .about-left .about-left-class{
     gap: 12px;
 }
-.about .about-left .about-left-class p{
+.about-container .about .about-left .about-left-class p{
     font-size: clamp(14px,16px,18px);
 }
-.about .about-right{
+.about-container .about .about-right{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.about .about-right .about-right-header{
+.about-container .about .about-right .about-right-header{
     align-self: center;
     display: flex;
 }
-.about .about-right .about-right-header h1{
+.about-container .about .about-right .about-right-header h1{
     letter-spacing: 10px;
     font-size: clamp(18px,20px,24px);
 }
-.about .about-right .about-right-img img{
+.about-container .about .about-right .about-right-img img{
     width: 100%;
 }
 }
 
 @media (max-width:1200px) and (min-width:901px) {
-.about .about-right .about-right-header h1{
+.about-container .about .about-right .about-right-header h1{
     letter-spacing: 10px;
     font-size: clamp(20px,24px,28px);
 }

@@ -9,6 +9,8 @@ import AboutComponent from './Components/AboutComponent/AboutComponent'
 import FaqsComponent from './Components/FaqsComponent/FaqsComponent'
 import CtaComponent from './Components/CtaComponent/CtaComponent'
 
+
+
 const App = () => {
   return (
     <BrowserRouter>

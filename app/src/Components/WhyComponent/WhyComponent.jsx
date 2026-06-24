@@ -5,7 +5,7 @@ import './WhyComponent.css'
 const WhyComponent = () => {
   return (
     <>
-    <div className="why">
+    <div id='why' className="why">
       {/*--------------------*/}
       <div className="why-class">
         <div className="why-class-left">
@@ -91,7 +91,6 @@ const WhyComponent = () => {
          
         </div>
       </div>
-      {/*--------------------------*/}
     </div>
     </>
   )

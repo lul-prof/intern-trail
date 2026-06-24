@@ -5,11 +5,14 @@ import {assets} from '../../assets/assets'
 const AboutComponent = () => {
   return (
     <>
-    <div className="about">
+    <div className="about-container">
+
+    
+    <div id='about' className="about">
       {/*----------------------*/}
       <div className="about-left">
         <div className="about-left-header">
-          <h1>ABOUT US</h1>
+          <h1>ABOUT INTERNTRAIL</h1>
         </div>
         <div className="about-left-class">
           <p>
@@ -26,12 +29,13 @@ const AboutComponent = () => {
       {/*-----------------------*/}
       <div className="about-right">
         <div className="about-right-header">
-          <h1>ABOUT US</h1>
+          <h1>ABOUT INTERNTRAIL</h1>
         </div>
         <div className="about-right-img">
           <img src={assets.aboutUs1} alt="image" />
         </div>
       </div>
+    </div>
     </div>
     </>
   )
