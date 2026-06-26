@@ -52,7 +52,7 @@ const NavbarComponent = () => {
           <li style={{color:reviews?"#3232ff":""}} onClick={()=>(navigateTo('reviews'),document.getElementById("sidemenu").style.display="none",setreviews(!reviews),setHome(false),setAbout(false),setFaqs(false),setContact(false),setWhy(false))}>REVIEWS</li>
           <li style={{color:about?"#3232ff":""}} onClick={()=>(navigateTo('about'),document.getElementById("sidemenu").style.display="none",setAbout(!about),setHome(false),setreviews(false),setFaqs(false),setContact(false),setWhy(false))}>ABOUT</li>
           <li style={{color:faqs?"#3232ff":""}} onClick={()=>(navigateTo('faq'),document.getElementById("sidemenu").style.display="none",setFaqs(!faqs),setHome(false),setreviews(false),setAbout(false),setContact(false),setWhy(false))}>FAQS</li>
-          <li style={{color:why?"#3232ff":""}} onClick={()=>(navigateTo('why'),document.getElementById("sidemenu").style.display="none",setWhy(!why),setFaqs(false),setHome(false),setreviews(false),setAbout(false),setContact(false))}>WHY US</li>
+          <li style={{color:about?"#3232ff":""}} onClick={()=>(navigateTo('about'),document.getElementById("sidemenu").style.display="none",setAbout(!about),setFaqs(false),setHome(false),setreviews(false),setAbout(false),setContact(false))}>WHY US</li>
           <li style={{color:contact?"#3232ff":""}} onClick={()=>(navigateTo('cta'),document.getElementById("sidemenu").style.display="none",setContact(!contact),setFaqs(false),setHome(false),setreviews(false),setAbout(false),setWhy(false))}>CONTACT</li>
           <li onClick={()=>(toast.success('Feature Under development!'),document.getElementById("sidemenu").style.display="none")}>LOGIN</li>
         </ul>

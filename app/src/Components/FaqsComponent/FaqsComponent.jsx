@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {assets, faqs} from '../../assets/assets'
 import './FaqsComponent.css'
 
@@ -11,6 +11,7 @@ const FaqsComponent = () => {
       {/*----------------------*/}
       <div className="faqs-header">
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <p>People often struggle to understand the Attachment process</p>
       </div>
       {/*----------------------*/}
       <div className="faqs-class">

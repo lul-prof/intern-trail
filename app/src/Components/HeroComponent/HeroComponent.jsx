@@ -14,6 +14,7 @@ const HeroComponent = () => {
           <h1>
             INDUSTRIAL ATTACHMENT MANAGEMENT SYSTEM
           </h1>
+          <h1 className='head-1'>ATTACHMENT MANAGEMENT SYSTEM</h1>
           <p>
             Welcome to InternTrail Kenya.
           </p>
@@ -33,7 +34,7 @@ const HeroComponent = () => {
       </div>
       {/*----------------------*/}
       <div className="hero-right">
-        <img src={assets.heroImage} alt="image" />
+        <img src={assets.heroImage} fetchPriority='high' referrerPolicy="no-referrer" alt="image" />
       </div>
     </div>
     </div>

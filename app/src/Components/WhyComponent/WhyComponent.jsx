@@ -5,91 +5,74 @@ import './WhyComponent.css'
 const WhyComponent = () => {
   return (
     <>
-    <div id='why' className="why">
-      {/*--------------------*/}
-      <div className="why-class">
-        <div className="why-class-left">
-          <div className="why-class-left-header">
-            <h1>WHY CHOOSE US</h1>
-          </div>
-          <img src={assets.whyChooseUs} alt="Image" />
+    <div id='about' className="why">
+      {/*----------------------*/}
+      <div className="why-top"></div>
+      {/*----------------------*/}
+      <div className="why-mid">
+
+        <div className="why-mid-left">
+          <img src={assets.aboutUs1} fetchPriority='high' referrerPolicy="no-referrer" alt="image" />
         </div>
-        <div className="why-class-right">
-          <div className="why-class-right-header">
-            <h1>WHY CHOOSE US</h1>
-          </div>
-          {/********************************/}
-          <div className="why-class-right-item">
-            <div className="why-class-item-left">
-              <img src={assets.tickIcon} alt="tick" />
-            </div>
-            <div className="why-class-item-right">
-              <div className="why-class-item-right-top">
-                <h3>Reduced Instutional supervision Charges</h3>
-              </div>
-              <div className="why-class-item-right-bottom">
-                <p>
-                  By automating the supervision process, the system eliminated the need for physical supervision.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/********************************/}
-          <div className="why-class-right-item">
-            <div className="why-class-item-left">
-              <img src={assets.tickIcon} alt="tick" />
-            </div>
-            <div className="why-class-item-right">
-              <div className="why-class-item-right-top">
-                <h3>
-                  Improved Time Management
-                </h3>
-              </div>
-              <div className="why-class-item-right-bottom">
-                <p>
-                  Attachees can directly apply for posted attachment opportunities from thier portal thus reduced time wasted visiting different organizations.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/********************************/}
-          <div className="why-class-right-item">
-            <div className="why-class-item-left">
-              <img src={assets.tickIcon} alt="tick" />
-            </div>
-            <div className="why-class-item-right">
-              <div className="why-class-item-right-top">
-                <h3>
-                  Go Green Initiative
-                </h3>
-              </div>
-              <div className="why-class-item-right-bottom">
-                <p>
-                  Our system reduces the need for physical paperwork by automating the entire process from application, acceptance to logbook submission
-                </p>
-              </div>
-            </div>
-          </div>
-          {/********************************/}
-          <div className="why-class-right-item">
-            <div className="why-class-item-left">
-              <img src={assets.tickIcon} alt="tick" />
-            </div>
-            <div className="why-class-item-right">
-              <div className="why-class-item-right-top">
-                <h3>
-                  Reduced corruption
-                </h3>
-              </div>
-              <div className="why-class-item-right-bottom">
-                <p>
-                  If adopted, our system aims to ensure fairness in the selection process for an attachment post since everything will be done from 1 platform.
-                </p>
-              </div>
-            </div>
-          </div>
-         
+      
+      <div className="why-mid-right">
+        <div className="why-mid-right-header">
+          <h2>WHY CHOOSE US</h2>
         </div>
+        <div className="why-mid-right-class">
+          {/***************************************/}
+          <div className="why-mid-right-class-item">
+            <div className="why-mid-right-class-item-left">
+              <p>01</p>
+            </div>
+            <div className="why-mid-right-class-item-right">
+              <h3>Go Green Initiative</h3>
+              <p>InternTrail reduces the need for physical paperwork by automating the entire process.</p>
+            </div>
+          </div>
+          {/***************************************/}
+          <div className="why-mid-right-class-item">
+            <div className="why-mid-right-class-item-left">
+              <p>02</p>
+            </div>
+            <div className="why-mid-right-class-item-right">
+              <h3>Time Management</h3>
+              <p>Attachees can directly apply for posted attachment opportunities from thier portal.</p>
+            </div>
+          </div>
+          {/***************************************/}
+          <div className="why-mid-right-class-item">
+            <div className="why-mid-right-class-item-left">
+              <p>03</p>
+            </div>
+            <div className="why-mid-right-class-item-right">
+              <h3>Reduced Attachment Charges</h3>
+              <p>Supervision process is fully automated and no printing charges are required.</p>
+            </div>
+          </div>
+          {/***************************************/}
+          <div className="why-mid-right-class-item">
+            <div className="why-mid-right-class-item-left">
+              <p>04</p>
+            </div>
+            <div className="why-mid-right-class-item-right">
+              <h3>Corruption reduction</h3>
+              <p>The system aims to ensure fairness in the selection process for an attachment post.</p>
+            </div>
+          </div>
+          {/***************************************/}
+          <div className="why-mid-right-class-item">
+            <div className="why-mid-right-class-item-left">
+              <p>05</p>
+            </div>
+            <div className="why-mid-right-class-item-right">
+              <h3>Progress Tracking & Analytics</h3>
+              <p>Attachees can track progress & get insights from their portal</p>
+            </div>
+          </div>
+          {/***************************************/}
+        </div>
+      </div>
       </div>
     </div>
     </>

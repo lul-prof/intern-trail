@@ -22,7 +22,6 @@ const App = () => {
           <HeroComponent/>
           <ReviewsComponent/>
           <WhyComponent/>
-          <AboutComponent/>
           <FaqsComponent/>
           <CtaComponent/>
         </>

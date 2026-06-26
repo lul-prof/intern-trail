@@ -1,21 +1,21 @@
 .faqs{
     width: 100%;
     padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
     overflow: hidden;
 }
 .faqs .faqs-header{
-    align-self: center;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 .faqs .faqs-class{
    display: flex;
    flex-direction: column;
    gap: 24px;
    align-self: center;
-   max-width: 70%;
 }
 .faqs .faqs-class .faq{
     display: flex;
@@ -54,23 +54,27 @@
    border-top: 1px solid rgba(201,201,201,1);
    padding: 10px 0;
 }
-/*-----------Mobile Screen---------------*/
-@media (max-width:768px) and (min-width:50px) {
+
+/*----------------Mobile Screen---------------*/
+@media (max-width:500px) and (min-width:50px) {
 .faqs{
-    padding: 15px;
+    padding:30px 15px;
+    grid-template-columns: 1fr;
     gap: 24px;
 }
 .faqs .faqs-header{
     text-align: center;
-    margin-bottom: 25px;
+    gap: 24px;
 }
 .faqs .faqs-header h1{
     font-size: clamp(18px,20px,24px);
     line-height: 1.5em;
 }
+.faqs .faqs-header p{
+    display: none;
+}
 .faqs .faqs-class{
    gap: 12px;
-   max-width: 100%;
 }
 .faqs .faqs-class .faq{
     gap: 12px;
@@ -78,16 +82,64 @@
 .faqs .faqs-class .faq .faq-top{
     gap: 12px;
 }
+
 .faqs .faqs-class .faq .faq-top .faq-top-left h3{
+    font-weight: 550;
     font-size: clamp(16px,18px,20px);
-    line-height: 1.3em;
 }
 .faqs .faqs-class .faq .faq-top .faq-top-right img{
     width: 20px;
     height: 20px;
 }
 .faqs .faqs-class .faq  .faq-bottom{
-   border-top: 1px solid rgba(201,201,201,1);
    padding: 10px 0;
 }   
+}
+
+@media (max-width:768px) and (min-width:501px) {
+.faqs{
+    padding:25px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.faqs .faqs-header{
+    text-align: center;
+    gap: 6px;
+}
+.faqs .faqs-header h1{
+    font-size: clamp(20px,24px,28px);
+    line-height: 1.5em;
+}
+
+.faqs .faqs-class{
+   gap: 12px;
+}
+.faqs .faqs-class .faq{
+    gap: 12px;
+}
+.faqs .faqs-class .faq .faq-top{
+    gap: 12px;
+}
+
+.faqs .faqs-class .faq .faq-top .faq-top-left h3{
+    font-weight: 550;
+    font-size: clamp(16px,18px,20px);
+}
+.faqs .faqs-class .faq .faq-top .faq-top-right img{
+    width: 20px;
+    height: 20px;
+}
+.faqs .faqs-class .faq  .faq-bottom{
+   padding: 10px 0;
+}    
+}
+
+@media (max-width:1150px) and (min-width:769px) {
+.faqs{
+    padding:30px;
+}
+.faqs .faqs-header h1{
+    font-size: clamp(20px,24px,28px);
+    line-height: 1.5em;
+}
 }

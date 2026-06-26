@@ -115,18 +115,17 @@
 }
 
   
-/*-----------Mobile Screen---------------*/
-
+/*----------------Mobile Screen---------------*/
 @media (max-width:500px) and (min-width:50px) {
 .nav{
-    padding-bottom:50px;
+    padding-bottom: 30px;
 }
 .nav .navbar{
-    padding: 10px;
-    gap: 6px;
+    padding: 5px;
+    gap: 12px;
 }
 .nav .navbar .navbar-left{
-    gap: 3px;
+    gap: 6px;
 }
 .nav .navbar .navbar-left .navbar-left-menu {
     display: flex;
@@ -135,45 +134,46 @@
     width: 25px;
     height: 25px;
 }
-.nav .navbar .navbar-left .navbar-left-logo {
-    align-self: last baseline;
+
+.nav .navbar .navbar-left .navbar-left-logo{
+    align-self:last baseline;
 }
+
 .nav .navbar .navbar-left .navbar-left-logo h1{
-    font-size: clamp(16px,18px,20px);
+    font-size: clamp(16px,18px,24px);
 }
 .nav .navbar .navbar-center{
     display: none;
 }
+
 .nav .navbar .navbar-right button{
     padding: 5px;
-    font-size: clamp(14px,16px,18px);
-    font-weight: 300;
 }
+
 .nav .sidemenu{
     width: 250px;
     padding: 20px;
 }
+
 .nav .sidemenu .sidemenu-content{
-    top:20%;
+    top:25%;
 }
 .nav .sidemenu .sidemenu-content ul{
-    list-style: none;
+    gap: 24px;
 }
+
 .nav .sidemenu .sidemenu-footer{
-    position: absolute;
-    top: 95%;
+    top: 90%;
 }
-    
 }
 
-
-@media (max-width:1000px) and (min-width:501px) {
+@media (max-width:768px) and (min-width:501px) {
 .nav{
-    padding-bottom:50px;
+    padding-bottom: 30px;
 }
 .nav .navbar{
     padding: 10px;
-    gap: 6px;
+    gap: 12px;
 }
 .nav .navbar .navbar-left{
     gap: 12px;
@@ -185,35 +185,90 @@
     width: 25px;
     height: 25px;
 }
-.nav .navbar .navbar-left .navbar-left-logo {
-    align-self: center;
+.nav .navbar .navbar-left .navbar-left-logo{
+    align-self:last baseline;
 }
+
 .nav .navbar .navbar-left .navbar-left-logo h1{
-    font-size: clamp(20px,25px,30px);
+    font-size: clamp(20px,24px,28px);
+    font-weight: 600;
 }
 .nav .navbar .navbar-center{
     display: none;
 }
+
 .nav .navbar .navbar-right button{
-    padding: 10px 20px;
-    font-size: clamp(14px,16px,18px);
-    font-weight: 300;
+    padding: 5px 15px;
+}
+
+.nav .sidemenu{
+    width: 350px;
+    padding: 20px;
+}
+
+.nav .sidemenu .sidemenu-content{
+    top:25%;
+}
+.nav .sidemenu .sidemenu-content ul{
+    gap: 24px;
+}
+
+.nav .sidemenu .sidemenu-footer{
+    top: 90%;
+}
+}
+
+
+@media (max-width:1000px) and (min-width:769px) {
+.nav{
+    padding-bottom: 40px;
+}
+.nav .navbar{
+    padding: 15px;
+    gap: 12px;
+}
+.nav .navbar .navbar-left{
+    gap: 12px;
+}
+.nav .navbar .navbar-left .navbar-left-menu {
+    display: none;
+}
+.nav .navbar .navbar-left .navbar-left-menu img{
+    width: 25px;
+    height: 25px;
+}
+.nav .navbar .navbar-left .navbar-left-logo{
+    align-self:last baseline;
+}
+
+.nav .navbar .navbar-left .navbar-left-logo h1{
+    font-size: clamp(16px,18px,24px);
+    font-weight: 600;
+}
+.nav .navbar .navbar-center{
+    display: block;
+}
+.nav .navbar .navbar-center ul{
+    gap: 6px;
+}
+.nav .navbar .navbar-center ul li{
+    font-weight: 400;
+    font-size: clamp(12px,14px,16px);
+}
+.nav .navbar .navbar-right button{
+    padding: 5px 15px;
 }
 .nav .sidemenu{
-    width: 300px;
+    width: 350px;
     padding: 20px;
 }
 .nav .sidemenu .sidemenu-content{
-    top:20%;
+    top:25%;
 }
 .nav .sidemenu .sidemenu-content ul{
-    list-style: none;
+    gap: 24px;
 }
 .nav .sidemenu .sidemenu-footer{
-    position: absolute;
-    top: 95%;
+    top: 90%;
 }
-    
 }
-
-
